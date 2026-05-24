@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>热点资讯聚合 - 实时热点追踪</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">🔥 热点资讯聚合</h1>
+      <p class="subtitle">实时追踪 · 科技 · 金融 · 社会</p>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="container">
+      <div class="tab-group">
+        <button class="tab active" data-category="all">全部</button>
+        <button class="tab" data-category="tech">🖥️ 科技</button>
+        <button class="tab" data-category="finance">💰 金融</button>
+        <button class="tab" data-category="society">🌍 社会</button>
+      </div>
+      <div class="actions">
+        <button id="refreshBtn" class="btn-refresh" title="刷新数据">
+          <span class="refresh-icon">↻</span>
+        </button>
+        <span id="lastUpdate" class="update-time"></span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="container">
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>正在加载热点数据...</p>
+      </div>
+      <div id="content" class="content" style="display: none;"></div>
+      <div id="error" class="error-msg" style="display: none;"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>数据来源于各平台公开接口 · 仅供学习参考</p>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
