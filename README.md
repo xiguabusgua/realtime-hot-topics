@@ -71,6 +71,10 @@ bun run server.js
 - 前端: 原生 JavaScript + CSS3
 - 运行时: Node.js 或 Bun
 
+## 部署
+
+详细部署指南请查看 [DEPLOY.md](DEPLOY.md)
+
 ## 文档
 
 完整文档请查看 [CODE_WIKI.md](CODE_WIKI.md)
