@@ -1,4 +1,4 @@
-const API_BASE = '/api';
+const API_BASE = typeof CONFIG !== 'undefined' && CONFIG.API_BASE ? CONFIG.API_BASE : '/api';
 
 const CATEGORY_LABELS = {
   tech: '🖥️ 科技热点',
